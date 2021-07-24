@@ -15,8 +15,10 @@ func mapFunc[T any, M any](a []T, f func(T) M) []M {
 
 // gotip run -gcflags=-G=3 main.go
 func main() {
+	// // test generic in xys package
 	// a := []int{1, 2, 3}
 	// xys.Find(1, a)
+	//
 	xys.Abc()
 	vi := []int{1, 2, 3, 4, 5, 6}
 	vs := mapFunc(vi, func(v int) string {
